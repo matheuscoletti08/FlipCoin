@@ -1,2 +1,2 @@
 # Coin Flip
-Projeto Coin Flip feito com .NET Maui com o auxilio do professor Guilherme.s
+Projeto feito na aula de PAM com .NET Maui
