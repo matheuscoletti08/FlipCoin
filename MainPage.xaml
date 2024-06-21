@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlipCoin.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Cara ou Coroa?"
+                Style="{StaticResource Headline}"
+                FontSize="35"
+                Padding="25"
+                SemanticProperties.HeadingLevel="Level1" 
+                />
+
+            <Image 
+                   x:Name="CC"
+                   Source="https://www2.sorteador.com.br/_imgs/caracoroa/cara.jpg" 
+                   MaximumWidthRequest="300"
+                   MaximumHeightRequest="300"/>
+
+
+            <Label
+                x:Name="CoinLbl"
+                FontAttributes="Bold"
+                FontSize="50"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1"/>
+
+            <Picker
+                x:Name="CoinPck"
+                Title="Escolha um lado">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Cara</x:String>
+                        <x:String>Coroa</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                x:Name="FlipCoinBtn"
+                Text="GIRAR MOEDA" 
+                Clicked="OnFlipCoinClicked"
+                BackgroundColor="Gray"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

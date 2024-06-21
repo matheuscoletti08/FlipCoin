@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FlipCoin.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FlipCoin.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="FlipCoin">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:FlipCoinView}"
+        Route="MainPage" />
+
+</Shell>
